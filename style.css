@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 480px) {
     .page_top_text {
-        height: 50vh;
+        height: 40vh;
         background-color: var(--navbarColor);
         margin-bottom: 2rem;
     }
@@ -167,9 +167,7 @@
 }
 
 .about_key_value_div {
-
     display: flex;
-
 }
 
 .about_key_value_div span {

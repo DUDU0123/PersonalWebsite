@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Bootstarp icons link -->
     <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body class="body">
@@ -49,7 +50,7 @@
             <!-- first -->
             <div class="contact-outer">
                 <div class="mb-5 contact_address">
-                    <h1 class="fw-bold fs-3">Contact us</h1>
+                    <h1 class="fw-bold fs-3">Contact me</h1>
                     <p class="text-secondary mb-3">We're open for any suggestion or just to have a chat</p>
                     <div class="d-md-flex">
                         <div class="mb-2 me-3">
@@ -68,7 +69,7 @@
                 </div>
 
                 <!-- form -->
-                <form action="" class="" id="form">
+                <form action="" id="submit-form">
                     <div class="form-group">
 
                         <input type="text" class="inp" name="" id="name" placeholder="Name">
@@ -85,7 +86,7 @@
                     <textarea name="message" id="message" cols="30" rows="10" class="message_area"
                         placeholder="Leave a message here...."></textarea>
 
-                    <button class="msg_btn" id="msg-send-btn">SEND</button>
+                    <button class="msg_btn" id="msg-send-btn" type="submit">SEND</button>
                 </form>
             </div>
 
@@ -104,8 +105,29 @@
         </div>
     </section>
 
+
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzFrDm-s9UGedN9PlVWqZ3VZR4VZa755bovJ8JxRpynSmAasQUX03ggcqrnxCBl6OoR/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+            },
+            error:function (err){
+                console.log(err);
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
