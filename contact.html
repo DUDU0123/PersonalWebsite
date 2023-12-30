@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstarp icons link -->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="body">
+    <!-- navigation bar -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container ">
+                <a href="" class="navbar-brand text-white fw-bold fs-3">SANDRA</a>
+                <div class="nav-list" id="nav_list">
+                    <ul class="list-unstyled mx-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link justify-content-center">HOME</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link justify-content-center">ABOUT</a>
+                        </li>
+                        <li class="nav-item"><a href="/resume.html" class="nav-link justify-content-center">RESUME</a>
+                        </li>
+                        <li class="nav-item"><a href="/skills.html" class="nav-link justify-content-center">SKILLS</a>
+                        </li>
+                        <li class="nav-item"><a href="/projects.html"
+                                class="nav-link justify-content-center">PROJECTS</a></li>
+                        <li class="nav-item"><a href="/contact.html" class="nav-link justify-content-center">CONTACT</a>
+                        </li>
+                    </ul>
+                    <i class="bi bi-x" id="close-btn"></i>
+                </div>
+                <i class="bi bi-list me-2 mx-auto fs-2 text-white toggle-icon" id="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="contact">
+        <div class="d-flex justify-content-center page_top_text">
+            <h1 class="title position-relative page_text">Contact Me</h1>
+        </div>
+
+        <div class="d-lg-flex">
+            <!-- first -->
+            <div class="contact-outer">
+                <div class="mb-5 contact_address">
+                    <h1 class="fw-bold fs-3">Contact us</h1>
+                    <p class="text-secondary mb-3">We're open for any suggestion or just to have a chat</p>
+                    <div class="d-md-flex">
+                        <div class="mb-2 me-3">
+                            <p class="contact-detail-key">ADDRESS : </p>
+                            <p class="contact-value">Nedumanny,686542, Kottayam,Kerala, India</p>
+                        </div>
+                        <div class="mb-2 me-3">
+                            <p class="contact-detail-key">EMAIL : </p>
+                            <p class="contact-value">mathewsandra71@gmail.com</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="contact-detail-key">PHONE : </p>
+                            <p class="contact-value">+91 6238534634</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- form -->
+                <form action="" class="" id="form">
+                    <div class="form-group">
+
+                        <input type="text" class="inp" name="" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="inp" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="inp" name="subject" id="subject" placeholder="Subject">
+                    </div>
+
+                    <textarea name="message" id="message" cols="30" rows="10" class="message_area"
+                        placeholder="Leave a message here...."></textarea>
+
+                    <button class="msg_btn" id="msg-send-btn">SEND</button>
+                </form>
+            </div>
+
+            <!-- second -->
+            <div class="d-grid align-content-center justify-content-center">
+                <h1 class="find-text">FIND WITH ME</h1>
+                <div class="connect_div">
+                    <a href="https://wa.me/916238534634" target="_blank" class="social-container-contact"><i
+                            class="bi bi-whatsapp connect_icon"></i></a>
+                    <a href="https://www.instagram.com/surya_balu_chettan_katta_fan/" target="_blank"
+                        class="social-container-contact"><i class="bi bi-instagram connect_icon"></i></a>
+                    <a href="https://www.linkedin.com/in/sandra-mathew-996822224" target="_blank"
+                        class="social-container-contact"><i class="bi bi-linkedin connect_icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
