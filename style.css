@@ -313,6 +313,11 @@
         width: 0;
     }
 }
+@keyframes animate-positive{
+    0%{
+        width: 0;
+    }
+}
 .msg_btn{
     border: none;
     background-color: var(--yellow);
